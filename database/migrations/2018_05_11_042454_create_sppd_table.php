@@ -23,7 +23,7 @@ class CreateSppdTable extends Migration
             $table->date('tanggal_kembali')->nullable();
             $table->text('pengikut')->nullable();
             $table->string('keterangan')->nullable();
-            $table->integer('pegawai_id');
+            $table->integer('pegawai_id')->unsigned();
             $table->foreign('pegawai_id')->references('id')->on('pegawai');
             $table->integer('surat_perintah_id')->unsigned();
             $table->foreign('surat_perintah_id')->references('id')->on('pegawai');
