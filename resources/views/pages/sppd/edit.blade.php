@@ -147,21 +147,21 @@
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label for="pengikut[]">Nama</label>
-                                                            <input class="form-control" required="required" name="pengikut[]" type="text" value="{{ $pengikut[0] }}"/>
+                                                            <input class="form-control"  name="pengikut[]" type="text" value="{{ $pengikut[0] }}"/>
                                                             <small class="text-danger"></small>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2">
                                                         <div class="form-group">
                                                             <label for="pengikut[]">Umur</label>
-                                                            <input class="form-control" required="required" name="pengikut[]" type="text" value="{{ $pengikut[1] }}"/>
+                                                            <input class="form-control"  name="pengikut[]" type="text" value="{{ $pengikut[1] }}"/>
                                                             <small class="text-danger"></small>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label for="pengikut[]">Hubungan Keluarga</label>
-                                                            <input class="form-control" required="required" name="pengikut[]" type="text" value="{{ $pengikut[2] }}"/>
+                                                            <input class="form-control"  name="pengikut[]" type="text" value="{{ $pengikut[2] }}"/>
                                                             <small class="text-danger"></small>
                                                         </div>
                                                     </div>
@@ -212,7 +212,7 @@
                                 
                                     <div class="form-group{{ $errors->has('keterangan') ? ' has-error' : '' }}">
                                         {!! Form::label('keterangan', 'Keterangan Lain-lain') !!}
-                                        {!! Form::text('keterangan', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                                        {!! Form::text('keterangan', null, ['class' => 'form-control']) !!}
                                         <small class="text-danger">{{ $errors->first('keterangan') }}</small>
                                     </div>
                                 </div>
