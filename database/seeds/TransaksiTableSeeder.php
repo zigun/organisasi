@@ -12,7 +12,7 @@ class TransaksiTableSeeder extends Seeder
     public function run()
     {
         $data = [
-            'tanggal' => '2018-02-15',
+            'tanggal' => '2018-11-05',
             'last' => '300000000',
             'in' => '0',
             'out' => '767000',
