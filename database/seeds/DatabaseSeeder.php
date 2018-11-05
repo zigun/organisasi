@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call(BiayaTableSeeder::class);
         $this->call(PegawaiTableSeeder::class);
         $this->call(SuratTableSeeder::class);
-        $this->call(PengeluaranTableSeeder::class);
+       /* $this->call(PengeluaranTableSeeder::class); */
         $this->call(AnggaranTableSeeder::class);
-        $this->call(TransaksiTableSeeder::class);
+        /* $this->call(TransaksiTableSeeder::class); */
     }
 }

@@ -29,22 +29,22 @@ class PengeluaranTableSeeder extends Seeder
 
         $biaya = [
             [
-                'pengeluaran_id' => 1,
-                'biaya_id' => 1,
+                'pengeluaran_id' => '1',
+                'biaya_id' => '1',
                 'uraian' => 'Golongan III',
-                'qty' => 1,
+                'qty' => '1',
                 'satuan' => 'Hari',
-                'harga' => 519000,
-                'total' => 519000
+                'harga' => '519000',
+                'total' => '519000'
             ],
             [
-                'pengeluaran_id' => 1,
-                'biaya_id' => 2,
+                'pengeluaran_id' => '1',
+                'biaya_id' => '2',
                 'uraian' => 'Bensin',
-                'qty' => 1,
+                'qty' => '1',
                 'satuan' => null,
-                'harga' => 248000,
-                'total' => 248000
+                'harga' => '248000',
+                'total' => '248000'
             ],
         ];
 
