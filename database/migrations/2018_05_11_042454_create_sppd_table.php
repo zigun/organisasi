@@ -25,7 +25,7 @@ class CreateSppdTable extends Migration
             $table->string('keterangan')->nullable();
             $table->integer('pegawai_id');
             $table->foreign('pegawai_id')->references('id')->on('pegawai');
-            $table->integer('surat_perintah_id');
+            $table->integer('surat_perintah_id')->unsigned();
             $table->foreign('surat_perintah_id')->references('id')->on('pegawai');
             $table->boolean('status')->default(0);
             $table->timestamps();

@@ -18,7 +18,7 @@ class CreateSuratPerintahTable extends Migration
             $table->string('nomor');
             $table->text('uraian');
             $table->date('tanggal');
-            $table->integer('pegawai_id');
+            $table->integer('pegawai_id')->unsigned();
             $table->foreign('pegawai_id')->references('id')->on('pegawai');
             $table->boolean('status');  
             $table->timestamps();
